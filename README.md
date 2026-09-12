@@ -33,7 +33,7 @@ Official multi-page website for **Dr. Syed Ali Luqman Hussaini** — Educator, E
 To run the local HTTP server:
 
 ```bash
-node server.js
+node local-server.js
 ```
 
 Then open your browser and visit:
