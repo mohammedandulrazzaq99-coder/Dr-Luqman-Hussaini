@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dr. Syed Ali Luqman Hussaini — Professional Inquiry</title>
+<!-- Tailwind CSS v3 CDN with forms and container-queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#102B5C',
+              blue: '#2457D6',
+              blueHover: '#1B44AB',
+              lightBg: '#F8FAFC',
+              cardBg: '#F4F7FC',
+              border: '#DCE2EA',
+              textMuted: '#667085',
+              darkBorder: '#CBD5E1'
+            }
+          },
+          fontFamily: {
+            serif: ['Newsreader', 'Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+<!-- Google Web Fonts for Academic Editorial Typography -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&amp;display=swap" rel="stylesheet"/>
+<style data-purpose="custom-typography-and-effects">
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #1F2937;
+      background-color: #FFFFFF;
+      -webkit-font-smoothing: antialiased;
+    }
+    .font-serif-heading {
+      font-family: 'Newsreader', Georgia, serif;
+    }
+    /* Subtle custom borders and shadows */
+    .hero-glow {
+      background: radial-gradient(circle at 60% 40%, rgba(219, 234, 254, 0.45) 0%, rgba(255, 255, 255, 0) 70%);
+    }
+    .spine-shadow {
+      box-shadow: -2px 0px 4px rgba(0,0,0,0.06), inset 0px 1px 0px rgba(255,255,255,0.8);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col text-slate-800 antialiased selection:bg-blue-100 selection:text-brand-blue">
+<!-- BEGIN: MainHeader -->
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-brand-border" data-purpose="site-navigation-header">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+<!-- Brand / Logo Title -->
+<a class="font-serif-heading text-xl md:text-2xl text-brand-navy font-medium tracking-tight hover:opacity-90 transition" href="#">
+        Dr. Syed Ali Luqman Hussaini
+      </a>
+<!-- Desktop Navigation Menu -->
+<nav aria-label="Main Navigation" class="hidden lg:flex items-center space-x-7 text-[14px] font-normal text-slate-600">
+<a class="hover:text-brand-blue transition" href="#about">About</a>
+<a class="hover:text-brand-blue transition" href="#expertise">Expertise</a>
+<a class="hover:text-brand-blue transition" href="#journey">Journey</a>
+<a class="hover:text-brand-blue transition" href="#research">Research &amp; Ideas</a>
+<a class="hover:text-brand-blue transition" href="#speaking">Speaking</a>
+<a class="hover:text-brand-blue transition" href="#media">Media</a>
+<a class="hover:text-brand-blue transition" href="#credentials">Credentials</a>
+</nav>
+<!-- Action Button / Header CTA -->
+<div class="hidden sm:flex items-center">
+<a class="inline-flex items-center gap-2 bg-brand-blue text-white hover:bg-brand-blueHover text-sm font-medium px-5 py-2.5 rounded transition shadow-sm hover:shadow" href="#inquiry-form">
+<span>Professional Inquiry</span>
+<svg aria-hidden="true" class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</a>
+</div>
+<!-- Mobile Menu Hamburger Button -->
+<div class="lg:hidden flex items-center">
+<button aria-label="Toggle navigation menu" class="p-2 text-slate-600 hover:text-brand-navy focus:outline-none" id="mobile-menu-toggle" type="button">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+</div>
+</div>
+<!-- Mobile Navigation Drawer -->
+<div class="hidden lg:hidden border-t border-brand-border bg-white px-6 py-4 space-y-3" id="mobile-menu">
+<a class="block py-1 text-slate-700 hover:text-brand-blue" href="#about">About</a>
+<a class="block py-1 text-slate-700 hover:text-brand-blue" href="#expertise">Expertise</a>
+<a class="block py-1 text-slate-700 hover:text-brand-blue" href="#journey">Journey</a>
+<a class="block py-1 text-slate-700 hover:text-brand-blue" href="#research">Research &amp; Ideas</a>
+<a class="block py-1 text-slate-700 hover:text-brand-blue" href="#speaking">Speaking</a>
+<a class="block py-1 text-slate-700 hover:text-brand-blue" href="#media">Media</a>
+<a class="block py-1 text-slate-700 hover:text-brand-blue" href="#credentials">Credentials</a>
+<a class="inline-flex w-full items-center justify-center gap-2 bg-brand-blue text-white px-4 py-2.5 rounded text-sm font-medium mt-2" href="#inquiry-form">
+        Professional Inquiry →
+      </a>
+</div>
+</header>
+<!-- END: MainHeader -->
+<main class="flex-grow">
+<!-- BEGIN: HeroSection -->
+<section class="relative overflow-hidden bg-white border-b border-brand-border pt-10 lg:pt-14 pb-12 hero-glow" data-purpose="hero-section">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+<!-- Hero Content (Left) -->
+<div class="lg:col-span-6 z-10">
+<!-- Eyebrow Category -->
+<p class="text-[12px] font-semibold tracking-widest text-brand-blue uppercase mb-3">
+              PROFESSIONAL INQUIRY
+            </p>
+<!-- Main Serif Headline -->
+<h1 class="font-serif-heading text-4xl sm:text-5xl lg:text-[54px] font-normal leading-[1.14] text-brand-navy tracking-tight mb-5">
+              Let’s start meaningful conversation.
+            </h1>
+<!-- Description Copy -->
+<p class="text-brand-textMuted text-[15px] sm:text-base leading-relaxed mb-7 max-w-xl">
+              I welcome relevant professional enquiries from individuals, institutions and organisations interested in collaboration, research, speaking engagements, advisory discussions or other opportunities aligned with education, leadership, psychology, human resource management and professional development.
+            </p>
+<!-- CTA Buttons -->
+<div class="flex flex-wrap items-center gap-3 sm:gap-4 mb-8">
+<a class="inline-flex items-center gap-2 bg-brand-blue hover:bg-brand-blueHover text-white px-6 py-3 rounded text-sm font-medium transition shadow-sm" href="#inquiry-form">
+<span>Send an Inquiry</span>
+<svg aria-hidden="true" class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</a>
+<a class="inline-flex items-center text-brand-blue border border-brand-blue hover:bg-blue-50 px-6 py-3 rounded text-sm font-medium transition" href="#explore-areas">
+                Explore My Work
+              </a>
+</div>
+<!-- Pillars Metadata Bar -->
+<div class="pt-2 flex flex-wrap items-center text-[11px] sm:text-[12px] font-medium tracking-wider text-slate-500 uppercase gap-x-3 gap-y-1">
+<span>COLLABORATE</span>
+<span class="text-slate-300">|</span>
+<span>DISCUSS</span>
+<span class="text-slate-300">|</span>
+<span>EXPLORE</span>
+<span class="text-slate-300">|</span>
+<span>CONTRIBUTE</span>
+<span class="text-slate-300">|</span>
+<span>CREATE IMPACT</span>
+</div>
+</div>
+<!-- Hero Visual & Editorial Card (Right) -->
+<div class="lg:col-span-6 relative flex flex-col md:flex-row items-center justify-end">
+<!-- Portrait Container -->
+<div class="relative w-full max-w-sm md:max-w-md lg:max-w-none flex justify-center">
+<div class="relative rounded-2xl overflow-hidden shadow-xl border border-slate-200/80 bg-slate-100 aspect-[4/5] max-h-[510px] w-full max-w-[390px]">
+<img alt="Dr. Syed Ali Luqman Hussaini seated smiling in thoughtful discussion" class="w-full h-full object-cover object-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC28H40V1WcZmaxIWQMfICVAKIobINTW3tRsRkB0rsag5IOlWmFizQofhNosp19ZHT7HrUWlP7_rnql407YDcYlenKMAOLPEP0Q1r7xO-9_TjU4GboCbCtm2SnXnc9ufpEeRibeW9lmldodY5d68Qztg7ZC2r0Hupg1IiWO498n_qOtmNQzexmRcezi2U1IXhG0CetpAPljL1pLaaSxwcaE3kS0SAl21fpByWuCbApJQ5GR4J-q4Nzh6EdfOzi1u8IbdPk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+</div>
+<!-- Floating Editorial Quote Badge -->
+<div class="absolute -top-3 right-0 sm:-right-2 max-w-[240px] sm:max-w-[270px] bg-white/95 backdrop-blur-sm p-4 sm:p-5 rounded-lg border border-brand-border shadow-lg">
+<div class="flex items-center gap-2 mb-2">
+<span class="text-brand-blue text-2xl font-serif font-black leading-none">“</span>
+<div class="w-8 h-[2px] bg-brand-blue"></div>
+</div>
+<p class="font-serif-heading italic text-brand-navy text-[14px] sm:text-[15px] leading-snug mb-2">
+                  Meaningful conversations create possibilities for a better tomorrow.
+                </p>
+<p class="text-[11px] font-medium text-slate-500">
+                  — Dr. Syed Ali Luqman Hussaini
+                </p>
+</div>
+<!-- Stacked Spine Tabs Graphic (Lower Right) -->
+<div class="absolute -bottom-4 right-0 sm:right-2 flex flex-col gap-1 w-36 sm:w-44 shadow-lg text-[11px] font-medium text-slate-700 select-none">
+<div class="bg-slate-100/95 border border-slate-300 rounded px-3 py-1.5 spine-shadow text-center tracking-wide text-brand-navy">Ideas</div>
+<div class="bg-slate-50/95 border border-slate-300 rounded px-3 py-1.5 spine-shadow text-center tracking-wide text-brand-navy">People</div>
+<div class="bg-white/95 border border-slate-300 rounded px-3 py-1.5 spine-shadow text-center tracking-wide text-brand-navy">Institutions</div>
+<div class="bg-blue-50/95 border border-blue-200 rounded px-3 py-1.5 spine-shadow text-center font-semibold tracking-wide text-brand-blue">Positive Change</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: WhoThisIsForAndTypes -->
+<section class="py-14 sm:py-16 bg-[#FAFCFF] border-b border-brand-border" data-purpose="inquiry-overview-section" id="explore-areas">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
+<!-- Left: Who This Is For + Documentary Image -->
+<div class="lg:col-span-5 flex flex-col justify-between">
+<div>
+<span class="text-[12px] font-semibold tracking-widest text-brand-blue uppercase">WHO THIS IS FOR</span>
+<h2 class="font-serif-heading text-2xl sm:text-3xl text-brand-navy font-normal mt-1 mb-3">
+                Working together for greater impact.
+              </h2>
+<p class="text-brand-textMuted text-[14.5px] leading-relaxed mb-4">
+                This page is for individuals, institutions and organisations seeking to engage with Dr. Hussaini on areas aligned with his work in education, leadership, psychology, human resource management and professional development.
+              </p>
+<a class="inline-flex items-center gap-1.5 text-brand-blue text-sm font-medium hover:underline mb-8" href="#inquiry-form">
+<span>See If Your Enquiry Fits</span>
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</a>
+</div>
+<!-- Authentic Notepad Collaboration Visual Mock -->
+<div class="relative rounded-xl border border-brand-border overflow-hidden shadow-sm bg-white p-4 group">
+<div class="aspect-[16/10] bg-slate-50 rounded-lg flex flex-col items-center justify-center p-6 border border-dashed border-slate-200 text-center relative overflow-hidden">
+<!-- Visual simulation of notepad lines -->
+<div class="absolute inset-0 opacity-20 bg-[linear-gradient(to_bottom,#0000000a_1px,transparent_1px)] bg-[size:100%_24px]"></div>
+<div class="relative z-10 space-y-2">
+<span class="text-xs tracking-wider text-slate-400 uppercase font-semibold">Strategic Collaboration Notes</span>
+<p class="font-serif-heading text-lg sm:text-xl text-brand-navy italic font-normal">
+                    Ideas · Dialogue · Collaboration · Impact
+                  </p>
+<p class="text-xs text-brand-textMuted max-w-xs mx-auto">
+                    Focused initiatives aimed at institutional strengthening and lifelong learning.
+                  </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Types of Inquiries (6 Categorized Cards) -->
+<div class="lg:col-span-7">
+<span class="text-[12px] font-semibold tracking-widest text-brand-blue uppercase">TYPES OF INQUIRIES</span>
+<h2 class="font-serif-heading text-2xl sm:text-3xl text-brand-navy font-normal mt-1 mb-2">
+              Areas we can explore together.
+            </h2>
+<p class="text-brand-textMuted text-sm mb-6">
+              You may get in touch regarding (where relevant):
+            </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<!-- Category 1 -->
+<div class="p-4 bg-white rounded-lg border border-brand-border hover:border-brand-blue/60 transition shadow-xs flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-lg bg-blue-50 border border-blue-100 flex items-center justify-center flex-shrink-0 text-brand-blue">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
+</svg>
+</div>
+<div>
+<h3 class="font-semibold text-brand-navy text-[14.5px] leading-snug">Speaking Invitations</h3>
+<p class="text-xs text-brand-textMuted mt-0.5 leading-relaxed">Conferences, seminars and keynotes</p>
+</div>
+</div>
+<!-- Category 2 -->
+<div class="p-4 bg-white rounded-lg border border-brand-border hover:border-brand-blue/60 transition shadow-xs flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-lg bg-blue-50 border border-blue-100 flex items-center justify-center flex-shrink-0 text-brand-blue">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
+</svg>
+</div>
+<div>
+<h3 class="font-semibold text-brand-navy text-[14.5px] leading-snug">Institutional Collaboration</h3>
+<p class="text-xs text-brand-textMuted mt-0.5 leading-relaxed">Partnerships and organisational initiatives</p>
+</div>
+</div>
+<!-- Category 3 -->
+<div class="p-4 bg-white rounded-lg border border-brand-border hover:border-brand-blue/60 transition shadow-xs flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-lg bg-blue-50 border border-blue-100 flex items-center justify-center flex-shrink-0 text-brand-blue">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
+</svg>
+</div>
+<div>
+<h3 class="font-semibold text-brand-navy text-[14.5px] leading-snug">Research Collaboration</h3>
+<p class="text-xs text-brand-textMuted mt-0.5 leading-relaxed">Research projects and academic discussions</p>
+</div>
+</div>
+<!-- Category 4 -->
+<div class="p-4 bg-white rounded-lg border border-brand-border hover:border-brand-blue/60 transition shadow-xs flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-lg bg-blue-50 border border-blue-100 flex items-center justify-center flex-shrink-0 text-brand-blue">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
+</svg>
+</div>
+<div>
+<h3 class="font-semibold text-brand-navy text-[14.5px] leading-snug">Advisory Discussions</h3>
+<p class="text-xs text-brand-textMuted mt-0.5 leading-relaxed">Guidance on education, leadership or HR</p>
+</div>
+</div>
+<!-- Category 5 -->
+<div class="p-4 bg-white rounded-lg border border-brand-border hover:border-brand-blue/60 transition shadow-xs flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-lg bg-blue-50 border border-blue-100 flex items-center justify-center flex-shrink-0 text-brand-blue">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
+</svg>
+</div>
+<div>
+<h3 class="font-semibold text-brand-navy text-[14.5px] leading-snug">Media Enquiries</h3>
+<p class="text-xs text-brand-textMuted mt-0.5 leading-relaxed">Interviews, features and public conversations</p>
+</div>
+</div>
+<!-- Category 6 -->
+<div class="p-4 bg-white rounded-lg border border-brand-border hover:border-brand-blue/60 transition shadow-xs flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-lg bg-blue-50 border border-blue-100 flex items-center justify-center flex-shrink-0 text-brand-blue">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
+</svg>
+</div>
+<div>
+<h3 class="font-semibold text-brand-navy text-[14.5px] leading-snug">Other Professional Enquiries</h3>
+<p class="text-xs text-brand-textMuted mt-0.5 leading-relaxed">Relevant opportunities and strategic proposals</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: WhoThisIsForAndTypes -->
+<!-- BEGIN: MainInquiryFormAndGuidanceSection -->
+<section class="py-14 sm:py-16 bg-white" data-purpose="inquiry-form-and-guidance" id="inquiry-form">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
+<!-- Left Column: The Inquiry Form -->
+<div class="lg:col-span-7">
+<span class="text-[12px] font-semibold tracking-widest text-brand-blue uppercase">SEND A PROFESSIONAL INQUIRY</span>
+<h2 class="font-serif-heading text-3xl sm:text-4xl text-brand-navy font-normal mt-1 mb-2">
+              Share the details of your enquiry.
+            </h2>
+<p class="text-brand-textMuted text-sm mb-8">
+              Please provide enough context to help us understand your request.
+            </p>
+<form action="#" class="space-y-4" method="POST" onsubmit="event.preventDefault(); alert('Thank you. Your inquiry has been noted.');">
+<!-- Name & Email Row -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block text-[13px] font-medium text-slate-700 mb-1.5" for="full-name">
+                    Full name <span class="text-red-500">*</span>
+</label>
+<input class="w-full text-sm border-brand-border rounded-md px-3.5 py-2.5 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-brand-blue focus:border-brand-blue transition" id="full-name" name="fullName" placeholder="Your full name" required="" type="text"/>
+</div>
+<div>
+<label class="block text-[13px] font-medium text-slate-700 mb-1.5" for="email-address">
+                    Email address <span class="text-red-500">*</span>
+</label>
+<input class="w-full text-sm border-brand-border rounded-md px-3.5 py-2.5 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-brand-blue focus:border-brand-blue transition" id="email-address" name="emailAddress" placeholder="you@organisation.org" required="" type="email"/>
+</div>
+</div>
+<!-- Organisation & Designation Row -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block text-[13px] font-medium text-slate-700 mb-1.5" for="organisation">
+                    Organisation / Institution
+                  </label>
+<input class="w-full text-sm border-brand-border rounded-md px-3.5 py-2.5 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-brand-blue focus:border-brand-blue transition" id="organisation" name="organisation" placeholder="Your organisation or institution" type="text"/>
+</div>
+<div>
+<label class="block text-[13px] font-medium text-slate-700 mb-1.5" for="role-designation">
+                    Role / Designation
+                  </label>
+<input class="w-full text-sm border-brand-border rounded-md px-3.5 py-2.5 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-brand-blue focus:border-brand-blue transition" id="role-designation" name="roleDesignation" placeholder="Your role or designation" type="text"/>
+</div>
+</div>
+<!-- Type of Inquiry Dropdown -->
+<div>
+<label class="block text-[13px] font-medium text-slate-700 mb-1.5" for="inquiry-type">
+                  Type of enquiry <span class="text-red-500">*</span>
+</label>
+<div class="relative">
+<select class="w-full appearance-none text-sm border-brand-border rounded-md px-3.5 py-2.5 bg-white text-slate-700 placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-brand-blue focus:border-brand-blue transition pr-10" id="inquiry-type" name="inquiryType" required="">
+<option disabled="" selected="" value="">Please select an option</option>
+<option value="Speaking Invitations">Speaking Invitations (Keynote, Conference, Seminar)</option>
+<option value="Institutional Collaboration">Institutional Collaboration &amp; Partnerships</option>
+<option value="Research Collaboration">Academic / Research Collaboration</option>
+<option value="Advisory Discussions">Advisory &amp; Strategic Mentorship</option>
+<option value="Media Enquiries">Media &amp; Public Dialogue Enquiries</option>
+<option value="Other">Other Professional Enquiry</option>
+</select>
+</div>
+</div>
+<!-- Subject Input -->
+<div>
+<label class="block text-[13px] font-medium text-slate-700 mb-1.5" for="subject">
+                  Subject <span class="text-red-500">*</span>
+</label>
+<input class="w-full text-sm border-brand-border rounded-md px-3.5 py-2.5 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-brand-blue focus:border-brand-blue transition" id="subject" name="subject" placeholder="A brief subject for your enquiry" required="" type="text"/>
+</div>
+<!-- Message Textarea -->
+<div>
+<label class="block text-[13px] font-medium text-slate-700 mb-1.5" for="message">
+                  Message <span class="text-red-500">*</span>
+</label>
+<textarea class="w-full text-sm border-brand-border rounded-md p-3.5 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-brand-blue focus:border-brand-blue transition resize-y" id="message" name="message" placeholder="Please share the purpose of your enquiry, relevant context, and any key details." required="" rows="5"></textarea>
+</div>
+<!-- Website URL (Optional) -->
+<div>
+<label class="block text-[13px] font-medium text-slate-700 mb-1.5" for="website-link">
+                  Relevant website or link (optional)
+                </label>
+<input class="w-full text-sm border-brand-border rounded-md px-3.5 py-2.5 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-brand-blue focus:border-brand-blue transition" id="website-link" name="websiteLink" placeholder="https://" type="url"/>
+</div>
+<!-- Submit Button -->
+<div class="pt-2">
+<button class="inline-flex items-center gap-2 bg-brand-blue hover:bg-brand-blueHover text-white px-8 py-3.5 rounded text-sm font-medium transition shadow-sm hover:shadow" type="submit">
+<span>Send Professional Inquiry</span>
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+</div>
+</form>
+</div>
+<!-- Right Column: Tips & Further Exploration Panels -->
+<div class="lg:col-span-5 space-y-8">
+<!-- Guidance Box (A few things that help) -->
+<div class="bg-brand-cardBg/70 border border-blue-100 rounded-xl p-6 sm:p-7 shadow-xs">
+<span class="text-[11px] font-semibold tracking-widest text-brand-blue uppercase">TIPS FOR A USEFUL INQUIRY</span>
+<h3 class="font-serif-heading text-2xl text-brand-navy font-normal mt-1 mb-2">
+                A few things that help.
+              </h3>
+<p class="text-xs text-brand-textMuted mb-6 leading-relaxed">
+                Sharing the right details makes it easier to understand your request and explore how we can best assist.
+              </p>
+<!-- List of Helpful Tips -->
+<div class="space-y-4">
+<!-- Tip 1 -->
+<div class="flex items-start gap-3">
+<div class="w-7 h-7 rounded-md bg-blue-100/70 border border-blue-200 text-brand-blue flex items-center justify-center flex-shrink-0 text-sm">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<div>
+<h4 class="text-xs font-semibold text-slate-900">Be clear about the purpose</h4>
+<p class="text-[12px] text-brand-textMuted leading-relaxed">Briefly explain what you are hoping to achieve.</p>
+</div>
+</div>
+<!-- Tip 2 -->
+<div class="flex items-start gap-3">
+<div class="w-7 h-7 rounded-md bg-blue-100/70 border border-blue-200 text-brand-blue flex items-center justify-center flex-shrink-0 text-sm">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<div>
+<h4 class="text-xs font-semibold text-slate-900">Provide relevant context</h4>
+<p class="text-[12px] text-brand-textMuted leading-relaxed">Include background information about your organisation or initiative.</p>
+</div>
+</div>
+<!-- Tip 3 -->
+<div class="flex items-start gap-3">
+<div class="w-7 h-7 rounded-md bg-blue-100/70 border border-blue-200 text-brand-blue flex items-center justify-center flex-shrink-0 text-sm">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<div>
+<h4 class="text-xs font-semibold text-slate-900">Mention key details</h4>
+<p class="text-[12px] text-brand-textMuted leading-relaxed">Share relevant dates, themes or specific areas of interest.</p>
+</div>
+</div>
+<!-- Tip 4 -->
+<div class="flex items-start gap-3">
+<div class="w-7 h-7 rounded-md bg-blue-100/70 border border-blue-200 text-brand-blue flex items-center justify-center flex-shrink-0 text-sm">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<div>
+<h4 class="text-xs font-semibold text-slate-900">Include useful links</h4>
+<p class="text-[12px] text-brand-textMuted leading-relaxed">Add a website or document if it helps explain your proposal.</p>
+</div>
+</div>
+<!-- Tip 5 -->
+<div class="flex items-start gap-3">
+<div class="w-7 h-7 rounded-md bg-blue-100/70 border border-blue-200 text-brand-blue flex items-center justify-center flex-shrink-0 text-sm">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<div>
+<h4 class="text-xs font-semibold text-slate-900">Keep it focused</h4>
+<p class="text-[12px] text-brand-textMuted leading-relaxed">Concise and well-structured messages are most helpful.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Further Exploration Section -->
+<div class="pt-2">
+<div class="flex items-center justify-between mb-1">
+<span class="text-[11px] font-semibold tracking-widest text-brand-blue uppercase">FURTHER EXPLORATION</span>
+<a class="inline-flex items-center gap-1 text-xs font-medium text-brand-blue hover:underline" href="#about">
+<span>View All Sections</span>
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</a>
+</div>
+<h3 class="font-serif-heading text-2xl text-brand-navy font-normal mb-1">
+                Explore related areas.
+              </h3>
+<p class="text-xs text-brand-textMuted mb-4">
+                You may also find the following sections helpful before getting in touch.
+              </p>
+<!-- 2x2 compact links grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<a class="p-3 bg-white border border-brand-border hover:border-brand-blue rounded-lg flex items-center justify-between group transition shadow-xs" href="#speaking">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-md bg-blue-50 text-brand-blue flex items-center justify-center">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<div>
+<h4 class="text-xs font-medium text-brand-navy">Speaking</h4>
+<p class="text-[10.5px] text-brand-textMuted">Talks &amp; engagements</p>
+</div>
+</div>
+<svg class="w-4 h-4 text-slate-400 group-hover:text-brand-blue transition transform group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</a>
+<a class="p-3 bg-white border border-brand-border hover:border-brand-blue rounded-lg flex items-center justify-between group transition shadow-xs" href="#research">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-md bg-blue-50 text-brand-blue flex items-center justify-center">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<div>
+<h4 class="text-xs font-medium text-brand-navy">Research &amp; Ideas</h4>
+<p class="text-[10.5px] text-brand-textMuted">Areas of research</p>
+</div>
+</div>
+<svg class="w-4 h-4 text-slate-400 group-hover:text-brand-blue transition transform group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</a>
+<a class="p-3 bg-white border border-brand-border hover:border-brand-blue rounded-lg flex items-center justify-between group transition shadow-xs" href="#expertise">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-md bg-blue-50 text-brand-blue flex items-center justify-center">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<div>
+<h4 class="text-xs font-medium text-brand-navy">Expertise</h4>
+<p class="text-[10.5px] text-brand-textMuted">Areas of work</p>
+</div>
+</div>
+<svg class="w-4 h-4 text-slate-400 group-hover:text-brand-blue transition transform group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</a>
+<a class="p-3 bg-white border border-brand-border hover:border-brand-blue rounded-lg flex items-center justify-between group transition shadow-xs" href="#media">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-md bg-blue-50 text-brand-blue flex items-center justify-center">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+<path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<div>
+<h4 class="text-xs font-medium text-brand-navy">Media</h4>
+<p class="text-[10.5px] text-brand-textMuted">Interviews &amp; features</p>
+</div>
+</div>
+<svg class="w-4 h-4 text-slate-400 group-hover:text-brand-blue transition transform group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: MainInquiryFormAndGuidanceSection -->
+<!-- BEGIN: TrustAndResponsePanels -->
+<section class="py-10 bg-[#FAFCFF] border-y border-brand-border" data-purpose="advisory-guidance-cards">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card 1: Preferred Contact Channel -->
+<div class="bg-white p-5 rounded-lg border border-brand-border flex items-start gap-4">
+<div class="w-10 h-10 rounded-md bg-blue-50 border border-blue-100 flex items-center justify-center flex-shrink-0 text-brand-blue">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
+</svg>
+</div>
+<div>
+<span class="text-[10.5px] font-semibold uppercase tracking-wider text-brand-blue block">CONTACT INFORMATION</span>
+<h3 class="font-semibold text-brand-navy text-[14.5px] mt-0.5 mb-1">Preferred contact channel.</h3>
+<p class="text-xs text-brand-textMuted leading-relaxed">
+                For all professional enquiries, please use the form above. Additional contact details will be shared where appropriate.
+              </p>
+</div>
+</div>
+<!-- Card 2: Privacy & Appropriate Use -->
+<div class="bg-white p-5 rounded-lg border border-brand-border flex items-start gap-4">
+<div class="w-10 h-10 rounded-md bg-blue-50 border border-blue-100 flex items-center justify-center flex-shrink-0 text-brand-blue">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
+</svg>
+</div>
+<div>
+<span class="text-[10.5px] font-semibold uppercase tracking-wider text-brand-blue block">IMPORTANT NOTE</span>
+<h3 class="font-semibold text-brand-navy text-[14.5px] mt-0.5 mb-1">Privacy &amp; appropriate use.</h3>
+<p class="text-xs text-brand-textMuted leading-relaxed">
+                Please avoid including confidential, sensitive or unnecessary personal information. This form is intended for relevant professional enquiries only.
+              </p>
+</div>
+</div>
+<!-- Card 3: Next Steps / Response -->
+<div class="bg-white p-5 rounded-lg border border-brand-border flex items-start gap-4">
+<div class="w-10 h-10 rounded-md bg-blue-50 border border-blue-100 flex items-center justify-center flex-shrink-0 text-brand-blue">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
+</svg>
+</div>
+<div>
+<span class="text-[10.5px] font-semibold uppercase tracking-wider text-brand-blue block">RESPONSE</span>
+<h3 class="font-semibold text-brand-navy text-[14.5px] mt-0.5 mb-1">Next steps.</h3>
+<p class="text-xs text-brand-textMuted leading-relaxed">
+                Your enquiry will be reviewed, and we will get back to you where appropriate. Please provide clear and complete information to help us understand your request.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: TrustAndResponsePanels -->
+<!-- BEGIN: DeepBlueCTABand -->
+<section class="bg-brand-navy py-10 lg:py-12 text-white" data-purpose="closing-action-band">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+<div>
+<h2 class="font-serif-heading text-2xl sm:text-3xl lg:text-[32px] font-normal tracking-tight text-white">
+              Meaningful ideas grow through conversation.
+            </h2>
+<p class="text-blue-100/80 text-sm mt-1">
+              If you have a relevant professional enquiry, I'd be glad to hear from you.
+            </p>
+</div>
+<div class="flex flex-wrap items-center gap-3">
+<a class="inline-flex items-center gap-2 bg-white text-brand-navy hover:bg-slate-100 text-sm font-medium px-6 py-2.5 rounded transition" href="#inquiry-form">
+<span>Send an Inquiry</span>
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</a>
+<a class="inline-flex items-center text-white border border-white/40 hover:bg-white/10 text-sm font-medium px-6 py-2.5 rounded transition" href="#">
+              Explore the Website
+            </a>
+</div>
+</div>
+</div>
+</section>
+<!-- END: DeepBlueCTABand -->
+</main>
+<!-- BEGIN: MainFooter -->
+<footer class="bg-white border-t border-brand-border pt-12 pb-8 text-slate-600 text-sm" data-purpose="site-global-footer">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- 4 Column Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 pb-10 border-b border-slate-100">
+<!-- Col 1: Bio / Identity -->
+<div class="lg:col-span-4 space-y-3">
+<h3 class="font-serif-heading text-xl text-brand-navy font-medium">
+            Dr. Syed Ali Luqman Hussaini
+          </h3>
+<p class="text-xs font-semibold text-slate-500 uppercase tracking-wide">
+            Educator · Educational Leader · Trainer
+          </p>
+<p class="text-xs text-brand-textMuted leading-relaxed max-w-sm">
+            An academic and professional record spanning education, leadership development, psychology, human resource management, research and professional development.
+          </p>
+</div>
+<!-- Col 2: Explore Navigation -->
+<div class="lg:col-span-2 space-y-2.5">
+<h4 class="text-xs font-semibold uppercase tracking-wider text-slate-900">Explore</h4>
+<ul class="space-y-1.5 text-xs text-brand-textMuted">
+<li><a class="hover:text-brand-blue transition" href="#about">About</a></li>
+<li><a class="hover:text-brand-blue transition" href="#expertise">Expertise</a></li>
+<li><a class="hover:text-brand-blue transition" href="#journey">Journey</a></li>
+<li><a class="hover:text-brand-blue transition" href="#research">Research &amp; Ideas</a></li>
+<li><a class="hover:text-brand-blue transition" href="#speaking">Speaking</a></li>
+<li><a class="hover:text-brand-blue transition" href="#media">Media</a></li>
+<li><a class="hover:text-brand-blue transition" href="#credentials">Credentials</a></li>
+</ul>
+</div>
+<!-- Col 3: Connect Channels -->
+<div class="lg:col-span-2 space-y-2.5">
+<h4 class="text-xs font-semibold uppercase tracking-wider text-slate-900">Connect</h4>
+<ul class="space-y-1.5 text-xs text-brand-textMuted">
+<li><a class="hover:text-brand-blue transition font-medium text-brand-navy" href="#inquiry-form">Send a Professional Inquiry</a></li>
+<li><a class="hover:text-brand-blue transition" href="https://linkedin.com" rel="noopener noreferrer" target="_blank">LinkedIn</a></li>
+<li><a class="hover:text-brand-blue transition" href="#">Gyanam Academy</a></li>
+</ul>
+</div>
+<!-- Col 4: Philosophical Quote -->
+<div class="lg:col-span-4 pl-0 lg:pl-4">
+<div class="relative bg-slate-50 p-4 rounded-lg border border-slate-200">
+<span class="text-brand-blue text-2xl font-serif leading-none select-none font-bold">“</span>
+<p class="font-serif-heading italic text-xs text-slate-700 leading-relaxed mt-1 mb-2">
+              Education is not just about information but about the development of better individuals and stronger institutions.
+            </p>
+<p class="text-[11px] font-medium text-slate-500">
+              — Dr. Syed Ali Luqman Hussaini
+            </p>
+</div>
+</div>
+</div>
+<!-- Bottom Bar -->
+<div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-3">
+<p>© 2026 Dr. Syed Ali Luqman Hussaini. All rights reserved.</p>
+<div class="flex items-center space-x-4">
+<a class="hover:text-slate-800 transition" href="#">Privacy</a>
+<span>|</span>
+<a class="hover:text-slate-800 transition" href="#">Accessibility</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- END: MainFooter -->
+<!-- JavaScript for Responsive Navigation Toggle -->
+<script data-purpose="mobile-nav-interactivity">
+    document.addEventListener('DOMContentLoaded', function() {
+      const toggleButton = document.getElementById('mobile-menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      if (toggleButton && mobileMenu) {
+        toggleButton.addEventListener('click', function() {
+          const isExpanded = mobileMenu.classList.toggle('hidden');
+          toggleButton.setAttribute('aria-expanded', !isExpanded);
+        });
+      }
+    });
+  </script>
+</body></html>

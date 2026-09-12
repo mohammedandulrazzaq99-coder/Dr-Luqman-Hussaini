@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Research &amp; Ideas | Dr. Syed Ali Luqman Hussaini</title>
+<!-- Google Fonts: Newsreader for serif typography & Inter for sans-serif readability -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Custom Configuration -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['Newsreader', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              dark: '#102B5C',
+              primary: '#0B57D0',
+              secondary: '#1A4BB5',
+              subtle: '#E8EEF8',
+              surface: '#F8FAFD',
+              border: '#E2E8F0',
+              text: '#1E293B',
+              muted: '#5B6E88'
+            }
+          }
+        }
+      }
+    }
+  </script>
+<!-- Styling: Global Typography and Layout Specifics -->
+<style data-purpose="typography-and-base">
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      color: #2D3748;
+      background-color: #FFFFFF;
+      -webkit-font-smoothing: antialiased;
+    }
+    .font-editorial {
+      font-family: 'Newsreader', Georgia, serif;
+    }
+  </style>
+  <link rel="stylesheet" href="animations.css">
+</head>
+<body class="bg-white text-slate-800 antialiased selection:bg-blue-100 selection:text-blue-900">
+<!-- BEGIN: MainHeader -->
+<header class="w-full bg-white border-b border-slate-100 sticky top-0 z-50 backdrop-blur-md bg-white/95">
+<div class="max-w-[1360px] mx-auto px-6 h-20 flex items-center justify-between">
+<!-- Brand Logo / Name -->
+<a class="font-editorial text-2xl font-semibold tracking-tight text-[#102B5C] hover:opacity-90 transition" href="index.html">
+        Dr. Syed Ali Luqman Hussaini
+      </a>
+<!-- Main Navigation Menu -->
+<nav class="hidden lg:flex items-center space-x-7 text-[13.5px] font-medium text-slate-600">
+<a class="hover:text-[#102B5C] transition py-1" href="about.html">About</a>
+<a class="hover:text-[#102B5C] transition py-1" href="expertise.html">Expertise</a>
+<a class="hover:text-[#102B5C] transition py-1" href="journey.html">Journey</a>
+<a class="text-[#0B57D0] border-b-2 border-[#0B57D0] pb-1 pt-1 font-semibold" href="research.html">Research &amp; Ideas</a>
+<a class="hover:text-[#102B5C] transition py-1" href="speaking.html">Speaking</a>
+<a class="hover:text-[#102B5C] transition py-1" href="media.html">Media</a>
+<a class="hover:text-[#102B5C] transition py-1" href="credentials.html">Credentials</a>
+</nav>
+<!-- Header Action Button -->
+<div>
+<a class="inline-flex items-center text-xs font-semibold px-4 py-2.5 bg-[#0B57D0] hover:bg-[#102B5C] text-white rounded shadow-sm transition" href="inquiry.html">
+          Professional Inquiry
+          <svg class="w-3.5 h-3.5 ml-1.5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</a>
+</div>
+</div>
+
+  <div class="hidden lg:hidden border-t border-slate-200 bg-white px-6 py-4 space-y-3" id="mobile-menu">
+    <a class="block py-1 text-slate-700 hover:text-blue-600 font-medium " href="index.html">Home</a>
+    <a class="block py-1 text-slate-700 hover:text-blue-600 font-medium " href="about.html">About</a>
+    <a class="block py-1 text-slate-700 hover:text-blue-600 font-medium " href="expertise.html">Expertise</a>
+    <a class="block py-1 text-slate-700 hover:text-blue-600 font-medium " href="journey.html">Journey</a>
+    <a class="block py-1 text-slate-700 hover:text-blue-600 font-medium text-blue-600 font-semibold" href="research.html">Research &amp; Ideas</a>
+    <a class="block py-1 text-slate-700 hover:text-blue-600 font-medium " href="speaking.html">Speaking</a>
+    <a class="block py-1 text-slate-700 hover:text-blue-600 font-medium " href="media.html">Media</a>
+    <a class="block py-1 text-slate-700 hover:text-blue-600 font-medium " href="credentials.html">Credentials</a>
+    <a class="inline-flex w-full items-center justify-center gap-2 bg-[#1C55DB] text-white px-4 py-2.5 rounded text-sm font-medium mt-2" href="inquiry.html">
+      Professional Inquiry →
+    </a>
+  </div>
+
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: HeroSection -->
+<section class="relative bg-gradient-to-b from-[#F2F6FC]/60 via-[#F7FAFC]/30 to-white overflow-hidden border-b border-slate-100">
+<div class="max-w-[1360px] mx-auto px-6 pt-12 pb-16">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<!-- Hero Left Content -->
+<div class="lg:col-span-6 z-10">
+<span class="text-[11px] font-bold tracking-widest text-[#0B57D0] uppercase mb-3 block">
+            RESEARCH &amp; IDEAS
+          </span>
+<h1 class="font-editorial text-4xl sm:text-5xl lg:text-[54px] leading-[1.12] text-[#102B5C] font-normal mb-5">
+            Exploring ideas for<br/>
+            better learning,<br/>
+            people and societies.
+          </h1>
+<p class="text-[14.5px] leading-relaxed text-slate-600 max-w-[500px] mb-8">
+            Dr. Syed Ali Luqman Hussaini's research and intellectual work explores the human dimensions of education, leadership, psychology and organisational development, with a focus on creating more effective and humane institutions.
+          </p>
+<div class="flex flex-wrap items-center gap-3 mb-10">
+<a class="inline-flex items-center text-xs font-medium px-5 py-3 bg-[#0B57D0] hover:bg-[#102B5C] text-white rounded transition shadow-sm" href="inquiry.html">
+              Explore Publications
+              <svg class="w-3.5 h-3.5 ml-1.5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</a>
+<a class="inline-flex items-center text-xs font-medium px-5 py-3 bg-white border border-blue-400 text-slate-700 hover:bg-slate-50 rounded transition" href="journey.html">
+              View Journey
+            </a>
+</div>
+<!-- Sub-navigation Keyword List -->
+<div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] font-semibold tracking-wider text-slate-400 uppercase pt-2">
+<span class="hover:text-slate-600 transition">IDEAS</span>
+<span class="text-slate-300">|</span>
+<span class="hover:text-slate-600 transition">RESEARCH</span>
+<span class="text-slate-300">|</span>
+<span class="hover:text-slate-600 transition">WRITINGS</span>
+<span class="text-slate-300">|</span>
+<span class="hover:text-slate-600 transition">TALKS</span>
+<span class="text-slate-300">|</span>
+<span class="hover:text-slate-600 transition">INTERVIEWS</span>
+<span class="text-slate-300">|</span>
+<span class="hover:text-slate-600 transition">REFLECTIONS</span>
+</div>
+</div>
+<!-- Hero Center Image cropped from Snapshot -->
+<div class="lg:col-span-3 flex justify-center items-center">
+<div class="relative w-full max-w-[280px] h-[340px] rounded-2xl overflow-hidden shadow-sm border border-slate-100">
+<img src="images/luqman_13.jpg" alt="Dr. Syed Ali Luqman Hussaini - Portrait" class="w-full h-full object-cover"   />
+</div>
+</div>
+<!-- Hero Far Right Quote Card -->
+<div class="lg:col-span-3 flex flex-col justify-center">
+<div class="pl-2 lg:pl-4">
+<!-- Decorative Large Quote Icon & Horizontal Line -->
+<div class="flex items-center space-x-3 mb-4">
+<svg class="w-8 h-8 text-[#0B57D0] fill-current" viewbox="0 0 24 24">
+<path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"></path>
+</svg>
+<span class="h-[1px] w-12 bg-blue-200 block"></span>
+</div>
+<blockquote class="font-editorial italic text-2xl text-[#102B5C] font-medium leading-snug mb-4">
+              “Ideas gain value when they help build better people and stronger institutions.”
+            </blockquote>
+<cite class="not-italic text-xs font-medium text-slate-500 block">
+              — Dr. Syed Ali Luqman Hussaini
+            </cite>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: PurposeAndPracticeSection -->
+<section class="py-16 bg-white border-b border-slate-100">
+<div class="max-w-[1360px] mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<!-- Left Sub-column: An Intellectual Purpose -->
+<div class="lg:col-span-4 pr-0 lg:pr-4">
+<span class="text-[11px] font-bold tracking-widest text-[#0B57D0] uppercase mb-2 block">
+            AN INTELLECTUAL PURPOSE
+          </span>
+<h2 class="font-editorial text-2xl sm:text-3xl text-[#102B5C] mb-3 leading-snug">
+            Research informed by real-world challenges.
+          </h2>
+<p class="text-[13.5px] leading-relaxed text-slate-600 mb-5">
+            My research and writings are driven by questions that emerge from education, organisational life and human behaviour. The goal is to contribute to understanding, improve practice and support the development of individuals, institutions and society.
+          </p>
+<a class="inline-flex items-center text-xs font-semibold text-[#0B57D0] hover:text-[#102B5C] transition" href="#">
+            Read more about my approach
+            <svg class="w-3.5 h-3.5 ml-1" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</a>
+</div>
+<!-- Center Image: Stack of Academic Books -->
+<div class="lg:col-span-4 flex justify-center">
+<div class="w-full max-w-[360px] h-[210px] rounded-lg overflow-hidden shadow-sm border border-slate-200">
+<img src="images/luqman_17.jpg" alt="Dr. Syed Ali Luqman Hussaini - Academic Research & Publications" class="w-full h-full object-cover" />
+</div>
+</div>
+<!-- Right Sub-column: Bridging Research and Practice -->
+<div class="lg:col-span-4 pl-0 lg:pr-2">
+<span class="text-[11px] font-bold tracking-widest text-[#0B57D0] uppercase mb-2 block">
+            BRIDGING RESEARCH AND PRACTICE
+          </span>
+<h2 class="font-editorial text-2xl sm:text-3xl text-[#102B5C] mb-3 leading-snug">
+            From ideas to meaningful change.
+          </h2>
+<p class="text-[13.5px] leading-relaxed text-slate-600 mb-5">
+            My work connects research, teaching, training and institutional experience. The ideas I explore are rooted in real educational and organisational contexts and inform my contributions as an educator, trainer and institutional leader.
+          </p>
+<a class="inline-flex items-center text-xs font-semibold text-[#0B57D0] hover:text-[#102B5C] transition" href="#">
+            Explore Areas of Expertise
+            <svg class="w-3.5 h-3.5 ml-1" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- END: PurposeAndPracticeSection -->
+<!-- BEGIN: KeyThemesSection -->
+<section class="py-16 bg-[#F9FBFC] border-b border-slate-100">
+<div class="max-w-[1360px] mx-auto px-6">
+<!-- Section Header -->
+<div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8 pb-3 border-b border-slate-200">
+<div>
+<span class="text-[11px] font-bold tracking-widest text-[#0B57D0] uppercase mb-1.5 block">
+            KEY THEMES
+          </span>
+<h2 class="font-editorial text-3xl sm:text-[32px] text-[#102B5C] font-normal">
+            Main themes in my research and writing.
+          </h2>
+</div>
+<a class="inline-flex items-center text-xs font-semibold text-[#0B57D0] hover:text-[#102B5C] mt-2 sm:mt-0 transition" href="#">
+          View All Themes
+          <svg class="w-3.5 h-3.5 ml-1" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</a>
+</div>
+<!-- Theme Cards Grid (5 columns) -->
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
+<!-- Theme 01 -->
+<div class="bg-white p-5 rounded-lg border border-slate-200/80 shadow-sm hover:shadow-md transition">
+<div class="flex items-center space-x-2 text-[#0B57D0] mb-4">
+<svg class="w-6 h-6 stroke-current" fill="none" viewbox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+<span class="text-2xl font-serif text-blue-200 font-light">01</span>
+</div>
+<h3 class="font-editorial text-lg text-[#102B5C] font-medium leading-snug mb-2">
+            Education &amp; Learning
+          </h3>
+<p class="text-xs leading-relaxed text-slate-500">
+            Teaching, learning processes and educational development in institutional contexts.
+          </p>
+</div>
+<!-- Theme 02 -->
+<div class="bg-white p-5 rounded-lg border border-slate-200/80 shadow-sm hover:shadow-md transition">
+<div class="flex items-center space-x-2 text-[#0B57D0] mb-4">
+<svg class="w-6 h-6 stroke-current" fill="none" viewbox="0 0 24 24"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+<span class="text-2xl font-serif text-blue-200 font-light">02</span>
+</div>
+<h3 class="font-editorial text-lg text-[#102B5C] font-medium leading-snug mb-2">
+            Leadership &amp; Institutional Development
+          </h3>
+<p class="text-xs leading-relaxed text-slate-500">
+            Leadership, succession planning and organisational development.
+          </p>
+</div>
+<!-- Theme 03 -->
+<div class="bg-white p-5 rounded-lg border border-slate-200/80 shadow-sm hover:shadow-md transition">
+<div class="flex items-center space-x-2 text-[#0B57D0] mb-4">
+<svg class="w-6 h-6 stroke-current" fill="none" viewbox="0 0 24 24"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+<span class="text-2xl font-serif text-blue-200 font-light">03</span>
+</div>
+<h3 class="font-editorial text-lg text-[#102B5C] font-medium leading-snug mb-2">
+            Human Behaviour &amp; Psychology
+          </h3>
+<p class="text-xs leading-relaxed text-slate-500">
+            Behaviour, motivation, emotional intelligence and human potential.
+          </p>
+</div>
+<!-- Theme 04 -->
+<div class="bg-white p-5 rounded-lg border border-slate-200/80 shadow-sm hover:shadow-md transition">
+<div class="flex items-center space-x-2 text-[#0B57D0] mb-4">
+<svg class="w-6 h-6 stroke-current" fill="none" viewbox="0 0 24 24"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+<span class="text-2xl font-serif text-blue-200 font-light">04</span>
+</div>
+<h3 class="font-editorial text-lg text-[#102B5C] font-medium leading-snug mb-2">
+            Human Resource Management
+          </h3>
+<p class="text-xs leading-relaxed text-slate-500">
+            Employee development, retention and people management in organisations.
+          </p>
+</div>
+<!-- Theme 05 -->
+<div class="bg-white p-5 rounded-lg border border-slate-200/80 shadow-sm hover:shadow-md transition">
+<div class="flex items-center space-x-2 text-[#0B57D0] mb-4">
+<svg class="w-6 h-6 stroke-current" fill="none" viewbox="0 0 24 24"><path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+<span class="text-2xl font-serif text-blue-200 font-light">05</span>
+</div>
+<h3 class="font-editorial text-lg text-[#102B5C] font-medium leading-snug mb-2">
+            Training &amp; Professional Development
+          </h3>
+<p class="text-xs leading-relaxed text-slate-500">
+            Designing and delivering training programmes for educators and professionals.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: KeyThemesSection -->
+<!-- BEGIN: SelectedIdeasSection -->
+<section class="py-16 bg-white border-b border-slate-100" id="publications">
+<div class="max-w-[1360px] mx-auto px-6">
+<!-- Section Header -->
+<div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8 pb-3 border-b border-slate-200">
+<div>
+<span class="text-[11px] font-bold tracking-widest text-[#0B57D0] uppercase mb-1.5 block">
+            SELECTED IDEAS &amp; WRITINGS
+          </span>
+<h2 class="font-editorial text-3xl sm:text-[32px] text-[#102B5C] font-normal">
+            Recent research, articles and reflections.
+          </h2>
+</div>
+<a class="inline-flex items-center text-xs font-semibold text-[#0B57D0] hover:text-[#102B5C] mt-2 sm:mt-0 transition" href="#">
+          View All
+          <svg class="w-3.5 h-3.5 ml-1" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</a>
+</div>
+<!-- Articles / Research Cards (3 across) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<article class="flex flex-col bg-white border border-slate-200 rounded-lg overflow-hidden hover:shadow-md transition">
+<div class="h-44 overflow-hidden border-b border-slate-100">
+<img src="images/luqman_18.jpg" alt="Dr. Syed Ali Luqman Hussaini - A Study on Employee Retention" class="w-full h-full object-cover" />
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-editorial text-lg text-[#102B5C] font-medium leading-snug mb-2">
+                A Study on Employee Retention with Special Reference to the BPO and IT Industry
+              </h3>
+<p class="text-xs text-slate-400 font-medium mb-3">
+                Doctoral thesis · 2015
+              </p>
+<p class="text-xs text-slate-600 leading-relaxed mb-4">
+                An exploration of factors influencing employee retention in the BPO and IT industry.
+              </p>
+</div>
+<a class="inline-flex items-center text-xs font-semibold text-[#0B57D0] hover:text-[#102B5C] transition" href="#">
+              Read summary
+              <svg class="w-3.5 h-3.5 ml-1" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</a>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="flex flex-col bg-white border border-slate-200 rounded-lg overflow-hidden hover:shadow-md transition">
+<div class="h-44 overflow-hidden border-b border-slate-100">
+<img src="images/luqman_15.jpg" alt="Dr. Syed Ali Luqman Hussaini - Leadership Effectiveness Research" class="w-full h-full object-cover" />
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-editorial text-lg text-[#102B5C] font-medium leading-snug mb-2">
+                Leadership Effectiveness and Spiritual Quotient
+              </h3>
+<p class="text-xs text-slate-400 font-medium mb-3">
+                Conference paper · 2017
+              </p>
+<p class="text-xs text-slate-600 leading-relaxed mb-4">
+                Presented at an academic conference on leadership and human development.
+              </p>
+</div>
+<a class="inline-flex items-center text-xs font-semibold text-[#0B57D0] hover:text-[#102B5C] transition" href="#">
+              View details
+              <svg class="w-3.5 h-3.5 ml-1" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</a>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="flex flex-col bg-white border border-slate-200 rounded-lg overflow-hidden hover:shadow-md transition">
+<div class="h-44 overflow-hidden border-b border-slate-100">
+<img src="images/luqman_20.jpg" alt="Dr. Syed Ali Luqman Hussaini - Infosys Succession Research" class="w-full h-full object-cover" />
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-editorial text-lg text-[#102B5C] font-medium leading-snug mb-2">
+                Succession went wrong or succession made wrong @ Infosys
+              </h3>
+<p class="text-xs text-slate-400 font-medium mb-3">
+                Academic seminar · 2017
+              </p>
+<p class="text-xs text-slate-600 leading-relaxed mb-4">
+                A critical reflection on succession planning and organisational leadership.
+              </p>
+</div>
+<a class="inline-flex items-center text-xs font-semibold text-[#0B57D0] hover:text-[#102B5C] transition" href="#">
+              Read more
+              <svg class="w-3.5 h-3.5 ml-1" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- END: SelectedIdeasSection -->
+<!-- BEGIN: QuestionsAndPracticeSection -->
+<section class="py-16 bg-[#F9FBFC] border-b border-slate-100">
+<div class="max-w-[1360px] mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+<!-- Left Side: Questions That Matter (7 cols) -->
+<div class="lg:col-span-7">
+<div class="flex items-center justify-between mb-6">
+<div>
+<span class="text-[11px] font-bold tracking-widest text-[#0B57D0] uppercase mb-1 block">
+                QUESTIONS THAT MATTER
+              </span>
+<h2 class="font-editorial text-2xl sm:text-3xl text-[#102B5C] font-normal">
+                Some of the questions I explore.
+              </h2>
+</div>
+<a class="text-xs font-semibold text-[#0B57D0] hover:text-[#102B5C] inline-flex items-center" href="#">
+              Explore More Questions
+              <svg class="w-3.5 h-3.5 ml-1" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</a>
+</div>
+<!-- 4 Questions Cards Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
+<div class="bg-white p-4 rounded-lg border border-slate-200 flex flex-col justify-between shadow-xs">
+<span class="font-serif text-2xl text-[#0B57D0] font-bold leading-none mb-2">“</span>
+<p class="font-editorial italic text-xs text-slate-700 leading-relaxed mb-1">
+                How can educational institutions better support the holistic development of individuals?
+              </p>
+</div>
+<div class="bg-white p-4 rounded-lg border border-slate-200 flex flex-col justify-between shadow-xs">
+<span class="font-serif text-2xl text-[#0B57D0] font-bold leading-none mb-2">“</span>
+<p class="font-editorial italic text-xs text-slate-700 leading-relaxed mb-1">
+                What makes leadership more effective in complex and changing organisational contexts?
+              </p>
+</div>
+<div class="bg-white p-4 rounded-lg border border-slate-200 flex flex-col justify-between shadow-xs">
+<span class="font-serif text-2xl text-[#0B57D0] font-bold leading-none mb-2">“</span>
+<p class="font-editorial italic text-xs text-slate-700 leading-relaxed mb-1">
+                How do psychology and human behaviour inform better teaching and institutional practice?
+              </p>
+</div>
+<div class="bg-white p-4 rounded-lg border border-slate-200 flex flex-col justify-between shadow-xs">
+<span class="font-serif text-2xl text-[#0B57D0] font-bold leading-none mb-2">“</span>
+<p class="font-editorial italic text-xs text-slate-700 leading-relaxed mb-1">
+                What role does training play in building capable, values-driven professionals?
+              </p>
+</div>
+</div>
+</div>
+<!-- Right Side: Ideas In Practice (5 cols) -->
+<div class="lg:col-span-5 lg:pl-4 border-t lg:border-t-0 lg:border-l border-slate-200 pt-8 lg:pt-0">
+<span class="text-[11px] font-bold tracking-widest text-[#0B57D0] uppercase mb-1 block">
+            IDEAS IN PRACTICE
+          </span>
+<h2 class="font-editorial text-2xl sm:text-3xl text-[#102B5C] font-normal mb-3 leading-snug">
+            Connecting research, teaching and society.
+          </h2>
+<p class="text-[13px] text-slate-600 leading-relaxed mb-6">
+            My research and ideas are not limited to academic discussion; they are closely connected to teaching, training, institutional work and public engagement.
+          </p>
+<!-- 3 Practice Badges -->
+<div class="grid grid-cols-3 gap-3">
+<div class="bg-white p-3 rounded-lg border border-slate-200 shadow-xs flex flex-col items-center text-center">
+<div class="w-8 h-8 rounded-full bg-blue-50 text-[#0B57D0] flex items-center justify-center mb-2">
+<svg class="w-4 h-4 stroke-current" fill="none" viewbox="0 0 24 24"><path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75"></path></svg>
+</div>
+<h4 class="text-xs font-semibold text-slate-800">Research</h4>
+<p class="text-[10px] text-slate-500 mt-1 leading-tight">Academic inquiry and analysis</p>
+</div>
+<div class="bg-white p-3 rounded-lg border border-slate-200 shadow-xs flex flex-col items-center text-center">
+<div class="w-8 h-8 rounded-full bg-blue-50 text-[#0B57D0] flex items-center justify-center mb-2">
+<svg class="w-4 h-4 stroke-current" fill="none" viewbox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75"></path></svg>
+</div>
+<h4 class="text-xs font-semibold text-slate-800">Teaching</h4>
+<p class="text-[10px] text-slate-500 mt-1 leading-tight">Classroom and institutional practice</p>
+</div>
+<div class="bg-white p-3 rounded-lg border border-slate-200 shadow-xs flex flex-col items-center text-center">
+<div class="w-8 h-8 rounded-full bg-blue-50 text-[#0B57D0] flex items-center justify-center mb-2">
+<svg class="w-4 h-4 stroke-current" fill="none" viewbox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75"></path></svg>
+</div>
+<h4 class="text-xs font-semibold text-slate-800">Societal Impact</h4>
+<p class="text-[10px] text-slate-500 mt-1 leading-tight">Better people, stronger institutions</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: QuestionsAndPracticeSection -->
+<!-- BEGIN: RelatedWorkAndExplorationSection -->
+<section class="py-16 bg-white border-b border-slate-100">
+<div class="max-w-[1360px] mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+<!-- Left Sub-panel: Related Work (6 cols) -->
+<div class="lg:col-span-6 flex flex-col justify-between">
+<div>
+<span class="text-[11px] font-bold tracking-widest text-[#0B57D0] uppercase mb-1 block">
+              RELATED WORK
+            </span>
+<h2 class="font-editorial text-2xl sm:text-3xl text-[#102B5C] font-normal mb-3">
+              Ideas expressed across different platforms.
+            </h2>
+<p class="text-[13.5px] text-slate-600 leading-relaxed mb-6">
+              My research and ideas appear through academic writing, conference presentations, seminars, interviews and public discussions.
+            </p>
+</div>
+<!-- 4 Horizontal Badges Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+<div class="p-3 bg-white border border-slate-200 rounded-lg text-left shadow-2xs">
+<div class="text-[#0B57D0] mb-2">
+<svg class="w-5 h-5 stroke-current" fill="none" viewbox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75"></path></svg>
+</div>
+<h4 class="text-xs font-semibold text-slate-800">Publications</h4>
+<p class="text-[10px] text-slate-500 mt-0.5 leading-tight">Research papers and articles</p>
+</div>
+<div class="p-3 bg-white border border-slate-200 rounded-lg text-left shadow-2xs">
+<div class="text-[#0B57D0] mb-2">
+<svg class="w-5 h-5 stroke-current" fill="none" viewbox="0 0 24 24"><path d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75"></path></svg>
+</div>
+<h4 class="text-xs font-semibold text-slate-800">Speaking</h4>
+<p class="text-[10px] text-slate-500 mt-0.5 leading-tight">Talks and academic presentations</p>
+</div>
+<div class="p-3 bg-white border border-slate-200 rounded-lg text-left shadow-2xs">
+<div class="text-[#0B57D0] mb-2">
+<svg class="w-5 h-5 stroke-current" fill="none" viewbox="0 0 24 24"><path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75"></path></svg>
+</div>
+<h4 class="text-xs font-semibold text-slate-800">Media</h4>
+<p class="text-[10px] text-slate-500 mt-0.5 leading-tight">Interviews and features</p>
+</div>
+<div class="p-3 bg-white border border-slate-200 rounded-lg text-left shadow-2xs">
+<div class="text-[#0B57D0] mb-2">
+<svg class="w-5 h-5 stroke-current" fill="none" viewbox="0 0 24 24"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75"></path></svg>
+</div>
+<h4 class="text-xs font-semibold text-slate-800">Institutional Work</h4>
+<p class="text-[10px] text-slate-500 mt-0.5 leading-tight">Practical application in educational settings</p>
+</div>
+</div>
+</div>
+<!-- Right Sub-panel: A Continuing Exploration Banner (6 cols) -->
+<div class="lg:col-span-6 bg-[#EDF3FB] rounded-xl p-8 flex flex-col md:flex-row items-center justify-between border border-blue-100 overflow-hidden relative">
+<div class="max-w-[340px] z-10 mb-6 md:mb-0">
+<span class="text-[11px] font-bold tracking-widest text-[#0B57D0] uppercase mb-1.5 block">
+              A CONTINUING EXPLORATION
+            </span>
+<h3 class="font-editorial text-2xl text-[#102B5C] font-medium leading-snug mb-3">
+              The journey of ideas continues.
+            </h3>
+<p class="text-xs text-slate-600 leading-relaxed mb-6">
+              Learning, questioning and sharing ideas remain central to my work. I continue to engage with emerging challenges in education, leadership, psychology and human development, with the aim of contributing to more effective and humane institutions.
+            </p>
+<a class="inline-flex items-center text-xs font-medium px-5 py-2.5 bg-[#0B57D0] hover:bg-[#102B5C] text-white rounded shadow-sm transition" href="#">
+              Explore My Work
+              <svg class="w-3.5 h-3.5 ml-1.5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</a>
+</div>
+<!-- Decorative Stacking Books Graphic -->
+<div class="w-48 h-36 md:h-44 md:w-56 overflow-hidden rounded-lg shadow-sm border border-slate-200/60 shrink-0">
+<img src="images/luqman_16.jpg" alt="Dr. Syed Ali Luqman Hussaini - Continuing Academic Journey" class="w-full h-full object-cover" />
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: RelatedWorkAndExplorationSection -->
+<!-- BEGIN: CallToActionSection -->
+<section class="py-14 bg-[#102B5C] text-white" id="inquiry">
+<div class="max-w-[1360px] mx-auto px-6">
+<div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
+<!-- Left Text -->
+<div class="max-w-2xl">
+<h2 class="font-editorial text-3xl sm:text-4xl text-white font-normal mb-3 leading-snug">
+            Let’s Work Towards Meaningful Impact.
+          </h2>
+<p class="text-xs sm:text-[13px] text-blue-100/80 leading-relaxed max-w-xl">
+            For speaking invitations, academic and institutional engagement, media enquiries and other relevant professional correspondence, this is the appropriate place to begin.
+          </p>
+</div>
+<!-- Right Buttons -->
+<div class="flex flex-wrap items-center gap-3 shrink-0">
+<a class="inline-flex items-center text-xs font-semibold px-6 py-3 bg-white text-[#102B5C] hover:bg-slate-100 rounded transition shadow" href="inquiry.html">
+            Send a Professional Inquiry
+            <svg class="w-3.5 h-3.5 ml-1.5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</a>
+<a class="inline-flex items-center text-xs font-semibold px-6 py-3 bg-transparent border border-white/40 hover:border-white text-white rounded transition" href="inquiry.html">
+            Explore My Work
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- END: CallToActionSection -->
+<!-- BEGIN: GlobalFooter -->
+<footer class="bg-white pt-14 pb-8 border-t border-slate-200 text-slate-600 text-xs">
+<div class="max-w-[1360px] mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 pb-12 border-b border-slate-100">
+<!-- Col 1: Bio / Identity (4 cols) -->
+<div class="lg:col-span-4">
+<h3 class="font-editorial text-lg text-[#102B5C] font-semibold mb-1">
+            Dr. Syed Ali Luqman Hussaini
+          </h3>
+<p class="text-xs text-slate-500 font-medium mb-3">
+            Educator · Educational Leader · Trainer
+          </p>
+<p class="text-xs leading-relaxed text-slate-500 max-w-sm">
+            An academic and professional record spanning education, leadership development, psychology, human resource management, research and professional development.
+          </p>
+</div>
+<!-- Col 2: Explore Links (2 cols) -->
+<div class="lg:col-span-2">
+<h4 class="font-semibold text-slate-900 mb-3 text-xs tracking-wider uppercase">Explore</h4>
+<ul class="space-y-2 text-xs">
+<li><a class="hover:text-[#0B57D0] transition" href="about.html">About</a></li>
+<li><a class="hover:text-[#0B57D0] transition" href="expertise.html">Expertise</a></li>
+<li><a class="hover:text-[#0B57D0] transition" href="journey.html">Journey</a></li>
+<li><a class="hover:text-[#0B57D0] transition" href="research.html">Research &amp; Ideas</a></li>
+<li><a class="hover:text-[#0B57D0] transition" href="speaking.html">Speaking</a></li>
+<li><a class="hover:text-[#0B57D0] transition" href="media.html">Media</a></li>
+<li><a class="hover:text-[#0B57D0] transition" href="credentials.html">Credentials</a></li>
+</ul>
+</div>
+<!-- Col 3: Connect Links (2 cols) -->
+<div class="lg:col-span-2">
+<h4 class="font-semibold text-slate-900 mb-3 text-xs tracking-wider uppercase">Connect</h4>
+<ul class="space-y-2 text-xs">
+<li><a class="hover:text-[#0B57D0] transition" href="#">Send a Professional Inquiry</a></li>
+<li><a class="hover:text-[#0B57D0] transition" href="#">LinkedIn</a></li>
+<li><a class="hover:text-[#0B57D0] transition" href="#">Gyanam Academy</a></li>
+</ul>
+</div>
+<!-- Col 4: Editorial Quote (4 cols) -->
+<div class="lg:col-span-4 flex flex-col justify-start">
+<div class="relative pl-6">
+<span class="font-serif text-3xl text-[#0B57D0] absolute left-0 top-0 leading-none">“</span>
+<p class="font-editorial italic text-[13.5px] text-[#102B5C] leading-relaxed mb-2">
+              Education is not just about information but about the development of better individuals and stronger institutions.
+            </p>
+<span class="font-serif text-3xl text-[#0B57D0] inline-block leading-none -mt-2">”</span>
+<cite class="not-italic text-[11px] text-slate-500 block mt-2">
+              — Dr. Syed Ali Luqman Hussaini
+            </cite>
+</div>
+</div>
+</div>
+<!-- Footer Bottom Sub-bar -->
+<div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-400">
+<p>© 2026 Dr. Syed Ali Luqman Hussaini. All rights reserved.</p>
+<div class="flex space-x-4 mt-2 sm:mt-0">
+<a class="hover:text-slate-600 transition" href="#">Privacy</a>
+<span>|</span>
+<a class="hover:text-slate-600 transition" href="#">Accessibility</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- END: GlobalFooter -->
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const toggleBtns = document.querySelectorAll('[aria-label="Toggle mobile menu"], [aria-label="Toggle navigation menu"], #mobile-menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    toggleBtns.forEach(btn => {
+      btn.addEventListener('click', function() {
+        if (mobileMenu) {
+          mobileMenu.classList.toggle('hidden');
+        }
+      });
+    });
+  });
+</script>
+
+  <script src="animations.js" defer></script>
+</body></html>

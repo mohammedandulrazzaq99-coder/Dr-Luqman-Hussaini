@@ -1,0 +1,216 @@
+/* ==========================================================================
+   Antigravity Professional Animations Engine
+   Enhanced Bold 4px Timeline Line Fill (High Visibility)
+   ========================================================================== */
+
+/* Ensure all text, headings, paragraphs, and content are ALWAYS 100% visible by default */
+body, h1, h2, h3, h4, h5, h6, p, span, a, div, section, article {
+  opacity: 1;
+}
+
+/* Top Scroll Progress Indicator Bar */
+#scroll-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3.5px;
+  width: 0%;
+  background: linear-gradient(90deg, #1952CE 0%, #2563EB 50%, #3B82F6 100%);
+  z-index: 1000;
+  transition: width 0.1s ease-out;
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.6);
+}
+
+/* Header Scroll Transition */
+header {
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+header.header-scrolled {
+  background-color: rgba(255, 255, 255, 0.94) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border-bottom-color: rgba(226, 232, 240, 0.8) !important;
+  box-shadow: 0 4px 20px -5px rgba(15, 23, 42, 0.07) !important;
+}
+
+/* ==========================================================================
+   Bold 4px Timeline Scroll Line Fill (High Contrast & High Visibility)
+   ========================================================================== */
+
+/* Horizontal Timeline Track (4px Bold Thickness) */
+.timeline-track-h {
+  position: relative;
+  overflow: hidden;
+  height: 4px !important;
+  border-radius: 9999px;
+  background-color: #CBD5E1 !important; /* Slate-300 track for clear contrast */
+}
+
+/* Horizontal Animated Fill Line (Vibrant Blue Glow) */
+.timeline-fill-h {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #1952CE 0%, #2563EB 50%, #3B82F6 100%) !important;
+  transition: width 0.1s ease-out;
+  box-shadow: 0 0 8px rgba(25, 82, 206, 0.8), 0 0 3px rgba(59, 130, 246, 0.9) !important;
+  z-index: 2;
+  border-radius: 9999px;
+}
+
+/* Vertical Timeline Track (4px Bold Thickness) */
+.timeline-track-v {
+  position: relative;
+  overflow: hidden;
+  width: 4px !important;
+  border-radius: 9999px;
+  background-color: #CBD5E1 !important;
+}
+
+/* Vertical Animated Fill Line (Vibrant Blue Glow) */
+.timeline-fill-v {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: linear-gradient(180deg, #1952CE 0%, #2563EB 50%, #3B82F6 100%) !important;
+  transition: height 0.1s ease-out;
+  box-shadow: 0 0 8px rgba(25, 82, 206, 0.8), 0 0 3px rgba(59, 130, 246, 0.9) !important;
+  z-index: 2;
+  border-radius: 9999px;
+}
+
+/* Micro-Interactions: Card Hover Elevation */
+.hover-lift {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px -6px rgba(15, 23, 42, 0.08), 0 4px 10px -2px rgba(15, 23, 42, 0.03);
+}
+
+/* Micro-Interactions: Button Arrow Slide & Click Scale */
+.btn-animate {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-animate:hover {
+  transform: translateY(-1px);
+}
+
+.btn-animate:active {
+  transform: scale(0.97);
+}
+
+.btn-animate .btn-arrow {
+  display: inline-block;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-animate:hover .btn-arrow {
+  transform: translateX(4px);
+}
+
+/* Nav Link Underline Hover Effect */
+header nav a:not(.bg-brand-blue):not(.bg-[#1C55DB]):not(.bg-brandBlue) {
+  position: relative;
+}
+
+header nav a:not(.bg-brand-blue):not(.bg-[#1C55DB]):not(.bg-brandBlue)::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #1952CE;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+header nav a:not(.bg-brand-blue):not(.bg-[#1C55DB]):not(.bg-brandBlue):hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Mobile Menu Accordion */
+#mobile-menu {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ==========================================================================
+   Face Positioning & Framing Engine
+   Guarantees Dr. Luqman's face is centered and 100% visible across all containers
+   ========================================================================== */
+
+img[src*="images/"],
+img[src*="dr_luqman"],
+img[src*="luqman_"] {
+  object-position: center 20% !important;
+}
+
+/* Specific focal points by photo composition */
+img[src*="portrait"] {
+  object-position: center 16% !important;
+}
+
+img[src*="convocation"] {
+  object-position: center 14% !important;
+}
+
+img[src*="speaking"],
+img[src*="keynote"],
+img[src*="orientation"] {
+  object-position: center 20% !important;
+}
+
+img[src*="flag_hoisting"] {
+  object-position: center 22% !important;
+}
+
+img[src*="gyanam_group"] {
+  object-position: center 25% !important;
+}
+
+img[src*="award_presentation"],
+img[src*="certificate"] {
+  object-position: center 22% !important;
+}
+
+/* Numbered gallery portraits & keynotes (head is in top 15-25%) */
+img[src*="luqman_1."],
+img[src*="luqman_3."],
+img[src*="luqman_5."],
+img[src*="luqman_6."],
+img[src*="luqman_7."],
+img[src*="luqman_8."],
+img[src*="luqman_9."],
+img[src*="luqman_10."],
+img[src*="luqman_11."],
+img[src*="luqman_13."],
+img[src*="luqman_17."],
+img[src*="luqman_18."] {
+  object-position: center 18% !important;
+}
+
+/* Numbered landscape group & ceremony photos */
+img[src*="luqman_2."],
+img[src*="luqman_4."],
+img[src*="luqman_14."],
+img[src*="luqman_19."],
+img[src*="luqman_20."] {
+  object-position: center 25% !important;
+}
+
+/* Square portraits & media sessions */
+img[src*="luqman_12."],
+img[src*="luqman_15."],
+img[src*="luqman_16."] {
+  object-position: center 20% !important;
+}
